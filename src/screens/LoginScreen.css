@@ -1,0 +1,101 @@
+/* // make the overall container full screen */
+.loginScreen {
+  position: relative;
+  height: 100%;
+  background: url("https://img.wallpapersafari.com/desktop/1680/1050/24/74/zgeTuV.jpg")
+    center no-repeat;
+}
+
+.loginScreen__gradient {
+  width: 100%;
+  z-index: 1;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+/* bring the login screen body h1 to the centre of the screen */
+.loginScreen__body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  z-index: 1;
+  color: white;
+}
+
+.loginScreen__input {
+  margin: 20px;
+}
+.loginScreen__body > h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.loginScreen__body > h1 {
+  font-size: 3.125rem;
+  margin-bottom: 20px;
+}
+
+.loginScreen__body > h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.loginScreen__Logo {
+  position: fixed;
+  left: 0;
+  width: 150px;
+  object-fit: contain;
+  padding-left: 20px;
+}
+
+.loginScreen__button {
+  position: fixed;
+  right: 20px;
+  padding: 10px 20px;
+  top: 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+/* give a cool hover effect on the button  */
+.loginScreen__button:hover {
+  background-color: #ff5a5f;
+}
+
+.loginScreen__input {
+  padding: 10px;
+}
+
+.loginScreen__input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+
+.loginScreen__getStarted {
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
